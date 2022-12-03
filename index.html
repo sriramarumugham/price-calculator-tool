@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <fieldset>
+      <form name="profit-calculator">
+        <label for="coconut-price">Coconut price per kg</label>
+        <input
+          id="coconut-price"
+          name="coconut-price"
+          type="number"
+          placeholder="coconut price per kg"
+        />
+
+        <label for="logistics-price">Logisitce and transport</label>
+        <input
+          id="logistics-price"
+          name="logistics-price"
+          type="number"
+          placeholder="logistics  and transport price"
+        />
+
+        <label for="profit">Profit percentage</label>
+        <input
+          id="profit"
+          name="profit"
+          type="number"
+          placeholder="Enter your profit percentage"
+        />
+
+        <label for="usd-inr">USD INR</label>
+        <input
+          id="usd-inr"
+          name="usd-inr"
+          placeholder="conversion rate usd inr"
+          type="number"
+        />
+        <label for="aed-inr">AED INR</label>
+
+        <input
+          id="aed-inr"
+          name="aed-inr"
+          placeholder="conversion rate aed inr"
+          type="number"
+        />
+      </form>
+      
+    <h2>1 kg  <span id="perice-per-kg-inr">0 </span> Rs </h2>
+    <h2>1 Bag <span id="perice-per-bag-inr">0 </span> Rs </h2>
+    <h2>1 Bag <span id="perice-per-bag-usd"> 0 </span> USD </h2>
+    <h2>1 Bag <span id="perice-per-bag-aed">0 </span> AED</h2>
+    </fieldset>
+
+    <script src="index.js"></script>
+  </body>
+</html>
