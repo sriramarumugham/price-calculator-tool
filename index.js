@@ -16,8 +16,8 @@ const pricePerBagAed = document.getElementById("perice-per-bag-aed");
 let c = 0;
 let log = 0;
 let p = 0;
-let aed = 1;
-let usd = 1;
+let aed = 0;
+let usd = 0;
 
 usdRate.addEventListener("input", function (e) {
   usd = e.target.value;
@@ -48,13 +48,16 @@ function update() {
   p = parseInt(p);
   c = parseInt(c);
   log = parseInt(log);
-  usd = parseInt(usd);
-  aed = parseInt(aed);
+//   usd = parseInt(usd);
+//   aed = parseInt(aed);
+
+  console.log(usd , aed)
 
   let priceperkginr = (c + log / 29000) * ((p + 100) / 100);
   let priceperbaginr = priceperkginr * 13.2;
   let usdinr = priceperbaginr / usd;
   let aedinr = priceperbaginr / aed;
+
 
   pricePerKginr.innerHTML = priceperkginr;
   pricePerBaginr.innerHTML = priceperbaginr;
