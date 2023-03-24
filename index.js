@@ -45,19 +45,18 @@ profitPercentage.addEventListener("input", function (e) {
 });
 
 function update() {
-  p = parseInt(p);
-  c = parseInt(c);
+//   p = parseInt(p);
+//   c = parseInt(c);
   log = parseInt(log);
-//   usd = parseInt(usd);
-//   aed = parseInt(aed);
+  //   usd = parseInt(usd);
+  //   aed = parseInt(aed);
 
-  console.log(usd , aed)
+  console.log(usd, aed);
 
   let priceperkginr = (c + log / 29000) * ((p + 100) / 100);
   let priceperbaginr = priceperkginr * 13.2;
   let usdinr = priceperbaginr / usd;
   let aedinr = priceperbaginr / aed;
-
 
   pricePerKginr.innerHTML = priceperkginr;
   pricePerBaginr.innerHTML = priceperbaginr;

@@ -14,7 +14,7 @@ fieldset{
     max-width: 400px;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: antiquewhite;
+    background-color: rgb(253, 247, 240);
 }
 form{
     display: flex;
